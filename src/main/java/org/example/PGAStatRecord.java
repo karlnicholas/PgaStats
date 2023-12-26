@@ -29,4 +29,16 @@ public class PGAStatRecord {
     String sgOtt;
     String sgT2g;
     String sgTotal;
+
+    public PgaStatsStrokesGained strokedGained() {
+        return PgaStatsStrokesGained.builder()
+                .finish(finish)
+                .sgPutt(sgPutt)
+                .sgArg(sgArg)
+                .sgApp(sgApp)
+                .sgOtt(sgOtt)
+                .sgT2g(sgT2g)
+                .sgTotal(sgTotal)
+                .build();
+    }
 }
